@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Vtitbid.Education.ISP19.Wpf.Training
+namespace Vtitbid.Education.ISP19.Wpf.Training.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для StudentsView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StudentsView : UserControl
     {
-        public MainWindow()
+        public StudentsView()
         {
             InitializeComponent();
         }

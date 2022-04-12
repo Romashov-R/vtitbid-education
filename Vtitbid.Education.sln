@@ -11,13 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISP19", "ISP19", "{574CCDE4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISP19K", "ISP19K", "{2C633025-87FE-4A53-89F3-2AAA1EB25F14}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.Education.ISP20.BankModels", "Vtitbid.Education.ISP20.BankModels\Vtitbid.Education.ISP20.BankModels.csproj", "{A770765F-C25C-4028-9952-BE456AF8CED8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.Education.ISP19K.Wpf.Training", "Vtitbid.Education.ISP19K.Wpf.Training\Vtitbid.Education.ISP19K.Wpf.Training.csproj", "{C218C373-942F-4C5D-91C3-5A8CD4DCD3B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vtitbid.Education.ISP19.Wpf.Training", "Vtitbid.Education.ISP19.Wpf.Training\Vtitbid.Education.ISP19.Wpf.Training.csproj", "{AF37681B-87FD-4DD0-AA5E-697712854089}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtitbid.Education.ISP19K.Scaffolding", "Vtitbid.Education.ISP19K.Scaffolding\Vtitbid.Education.ISP19K.Scaffolding.csproj", "{F4CB6333-1BA4-43A5-82D2-EF382C51880E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +25,6 @@ Global
 		{750FA9CB-1FF0-488F-9D96-14E28CBF0A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750FA9CB-1FF0-488F-9D96-14E28CBF0A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750FA9CB-1FF0-488F-9D96-14E28CBF0A60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A770765F-C25C-4028-9952-BE456AF8CED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A770765F-C25C-4028-9952-BE456AF8CED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A770765F-C25C-4028-9952-BE456AF8CED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A770765F-C25C-4028-9952-BE456AF8CED8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C218C373-942F-4C5D-91C3-5A8CD4DCD3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C218C373-942F-4C5D-91C3-5A8CD4DCD3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C218C373-942F-4C5D-91C3-5A8CD4DCD3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,20 +33,14 @@ Global
 		{AF37681B-87FD-4DD0-AA5E-697712854089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF37681B-87FD-4DD0-AA5E-697712854089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF37681B-87FD-4DD0-AA5E-697712854089}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4CB6333-1BA4-43A5-82D2-EF382C51880E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4CB6333-1BA4-43A5-82D2-EF382C51880E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4CB6333-1BA4-43A5-82D2-EF382C51880E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4CB6333-1BA4-43A5-82D2-EF382C51880E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{750FA9CB-1FF0-488F-9D96-14E28CBF0A60} = {5A536DE0-DECD-42E4-B89E-F8E75365BBE4}
-		{A770765F-C25C-4028-9952-BE456AF8CED8} = {5A536DE0-DECD-42E4-B89E-F8E75365BBE4}
 		{C218C373-942F-4C5D-91C3-5A8CD4DCD3B0} = {2C633025-87FE-4A53-89F3-2AAA1EB25F14}
 		{AF37681B-87FD-4DD0-AA5E-697712854089} = {574CCDE4-8A9C-42F8-99F5-A8A9CF6BD855}
-		{F4CB6333-1BA4-43A5-82D2-EF382C51880E} = {2C633025-87FE-4A53-89F3-2AAA1EB25F14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F69C125F-9FB2-484E-B8E5-D0F61B8625C9}

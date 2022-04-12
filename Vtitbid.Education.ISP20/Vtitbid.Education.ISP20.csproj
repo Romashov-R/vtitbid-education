@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Vtitbid.Education.ISP20.BankModels\Vtitbid.Education.ISP20.BankModels.csproj" />
-  </ItemGroup>
-
 </Project>

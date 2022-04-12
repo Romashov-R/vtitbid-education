@@ -6,12 +6,12 @@ namespace Vtitbid.Education.ISP19.Wpf.Training.Commands
     public abstract class Command : ICommand
     {
         protected Action<object> _command;
-        protected Predicate<object> _predicate;
+        protected Predicate<object>? _predicate;
         public event EventHandler? CanExecuteChanged;
 
         public virtual bool CanExecute(object? parameter)
         {
-            if (_predicate != null)
+            if (_predicate == null)
                 return true;
 
             return _predicate(parameter);

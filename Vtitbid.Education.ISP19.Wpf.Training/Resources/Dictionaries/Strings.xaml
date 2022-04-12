@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="Name">Волгодонский техникум информационных технологий, бизнеса и дизайна</system:String>
+    <system:String x:Key="Abbreviature">ВТИТБиД</system:String>
+
+    <system:String x:Key="StudentsMainControl">Students</system:String>
+    <system:String x:Key="EmployeesMainControl">Employees</system:String>
+
+</ResourceDictionary>
