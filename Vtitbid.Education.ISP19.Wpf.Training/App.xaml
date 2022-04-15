@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training"
              StartupUri="Views/MainWindow.xaml">
-    <Application.Resources>
+    <Application.Resources>       
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Dictionaries/Colors.xaml"/>
                 <ResourceDictionary Source="Resources/Dictionaries/Strings.xaml"/>
+                <ResourceDictionary Source="Resources/Dictionaries/Icons.xaml"/>
+                <ResourceDictionary Source="Resources/Dictionaries/Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="Vulgat">pack://application:,,,/Fonts/#Vulgat</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

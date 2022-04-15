@@ -8,59 +8,66 @@
         xmlns:controls="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.Controls"
         mc:Ignorable="d"
         Title="ВТИТБиД" 
-        Height="450" 
-        Width="800">
+        Height="540" 
+        Width="960">
 
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
 
-    <Window.Resources>
-        <Style TargetType="{x:Type controls:NavigationButton}">
-            
-        </Style>
-    </Window.Resources>
-    
     <!-- Menu -->
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="200px"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
         <Border
             Grid.Column="0"
-            Background="{StaticResource ResourceKey=ColorGrayLight}">
+            Background="{StaticResource ColorBackgroundSecond}">
 
             <StackPanel
                 VerticalAlignment="Center">
 
                 <controls:NavigationButton
-                    Margin="8,4,8,4"
-                    Content="Студенты"
-                    CommandParameter="{StaticResource StudentsMainControl}"
-                    Command="{Binding ChangeMainControlCommand}"/>
+                    x:Name="MenuItemStudents"
+                    IconGeometry="{StaticResource IconStudents}"
+                    Content="{StaticResource Students}"
+                    MenuItemIdentifier="Students"
+                    Command="{Binding ChangeMainControlCommand}"
+                    CommandParameter="{Binding ElementName=MenuItemStudents, Path=MenuItemIdentifier}"/>
 
                 <controls:NavigationButton
-                    Margin="8,4,8,4"
-                    Content="Работники"
-                    CommandParameter="{StaticResource EmployeesMainControl}"
-                    Command="{Binding ChangeMainControlCommand}"/>
+                    x:Name="MenuItemGroups" 
+                    IconGeometry="{StaticResource IconGroups}"
+                    Content="{StaticResource Groups}"
+                    MenuItemIdentifier="Groups"
+                    Command="{Binding ChangeMainControlCommand}"
+                    CommandParameter="{Binding ElementName=MenuItemGroups, Path=MenuItemIdentifier}"/>
 
                 <controls:NavigationButton
-                    Margin="8,4,8,4"
-                    Content="Группы"
-                    CommandParameter="Groups"/>
+                    x:Name="MenuItemEmployees" 
+                    IconGeometry="{StaticResource IconEmployees}"
+                    Content="{StaticResource Employees}"
+                    MenuItemIdentifier="Employees"
+                    Command="{Binding ChangeMainControlCommand}"
+                    CommandParameter="{Binding ElementName=MenuItemEmployees, Path=MenuItemIdentifier}"/>
 
                 <controls:NavigationButton
-                    Margin="8,4,8,4"
-                    Content="Должности"
-                    CommandParameter="Positions"/>
+                    x:Name="MenuItemPositions" 
+                    IconGeometry="{StaticResource IconPositions}"
+                    Content="{StaticResource Positions}"
+                    MenuItemIdentifier="Positions"
+                    Command="{Binding ChangeMainControlCommand}"
+                    CommandParameter="{Binding ElementName=MenuItemPositions, Path=MenuItemIdentifier}"/>
 
-                <controls:NavigationButton
-                    Margin="8,4,8,4"
-                    Content="Специальности"
-                    CommandParameter="Specialities"/>
+                <controls:NavigationButton 
+                    x:Name="MenuItemSpecialities" 
+                    IconGeometry="{StaticResource IconSpecialities}"
+                    Content="{StaticResource Specialities}"
+                    MenuItemIdentifier="Specialities"
+                    Command="{Binding ChangeMainControlCommand}"
+                    CommandParameter="{Binding ElementName=MenuItemSpecialities, Path=MenuItemIdentifier}"/>
 
             </StackPanel>
         </Border>
@@ -68,7 +75,8 @@
         <!-- Content -->
         <ContentControl
             Grid.Column="1"
-            Content="{Binding CurrentMainControl}"/>
-        
+            Content="{Binding CurrentMainControl}"
+            Background="{StaticResource ColorBackgroundSecond}"/>
+
     </Grid>
 </Window>
