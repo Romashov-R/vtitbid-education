@@ -3,6 +3,7 @@ using Vtitbid.Education.ISP19.Wpf.Training.Models;
 
 namespace Vtitbid.Education.ISP19.Wpf.Training.Data
 {
+    // https://github.com/Romashov-R/vtitbid-education
     public class DatabaseContext : DbContext
     {
         public DbSet<Student> Students { get; set; }

@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Vtitbid.Education.ISP19.Wpf.Training.Views
 {
     /// <summary>
-    /// Логика взаимодействия для AddUserView.xaml
+    /// Логика взаимодействия для SpecialitiesView.xaml
     /// </summary>
-    public partial class AddUserView : Window
+    public partial class SpecialityListView : UserControl
     {
-        public AddUserView()
+        public SpecialityListView()
         {
             InitializeComponent();
         }

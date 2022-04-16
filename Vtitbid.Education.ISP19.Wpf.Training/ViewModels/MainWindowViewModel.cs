@@ -40,9 +40,13 @@ namespace Vtitbid.Education.ISP19.Wpf.Training.ViewModels
 
         public MainWindowViewModel()
         {
-            _mainControls = new Dictionary<MenuItemIdentifier, UserControl>();            
-            _mainControls.Add(MenuItemIdentifier.Students, new StudentsView());
-            _mainControls.Add(MenuItemIdentifier.Employees, new EmployeesView());
+            _mainControls = new Dictionary<MenuItemIdentifier, UserControl>();
+            _currentMainControl = new StudentListView();
+            _mainControls.Add(MenuItemIdentifier.Students, _currentMainControl);
+            _mainControls.Add(MenuItemIdentifier.Groups, new GroupListView());
+            _mainControls.Add(MenuItemIdentifier.Employees, new EmployeeListView());
+            _mainControls.Add(MenuItemIdentifier.Positions, new PositionListView());
+            _mainControls.Add(MenuItemIdentifier.Specialities, new SpecialityListView());            
         }
     }
 }

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Vtitbid.Education.ISP19.Wpf.Training.Views
 {
     /// <summary>
-    /// Логика взаимодействия для EmployeesView.xaml
+    /// Логика взаимодействия для GroupsView.xaml
     /// </summary>
-    public partial class EmployeesView : UserControl
+    public partial class GroupListView : UserControl
     {
-        public EmployeesView()
+        public GroupListView()
         {
             InitializeComponent();
         }

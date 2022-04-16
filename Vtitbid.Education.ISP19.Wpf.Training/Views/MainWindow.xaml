@@ -24,13 +24,14 @@
 
         <Border
             Grid.Column="0"
-            Background="{StaticResource ColorBackgroundSecond}">
+            Background="{StaticResource ColorBackgroundAccent}">
 
             <StackPanel
                 VerticalAlignment="Center">
 
                 <controls:NavigationButton
                     x:Name="MenuItemStudents"
+                    IsChecked="True"
                     IconGeometry="{StaticResource IconStudents}"
                     Content="{StaticResource Students}"
                     MenuItemIdentifier="Students"
@@ -75,8 +76,7 @@
         <!-- Content -->
         <ContentControl
             Grid.Column="1"
-            Content="{Binding CurrentMainControl}"
-            Background="{StaticResource ColorBackgroundSecond}"/>
+            Content="{Binding CurrentMainControl}"/>
 
     </Grid>
 </Window>

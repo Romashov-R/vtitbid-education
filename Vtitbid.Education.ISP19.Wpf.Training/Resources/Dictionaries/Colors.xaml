@@ -4,11 +4,12 @@
     <SolidColorBrush x:Key="ColorPrimary">#3772FF</SolidColorBrush>
     <SolidColorBrush x:Key="ColorPrimaryDark">#0048CB</SolidColorBrush>
     <SolidColorBrush x:Key="ColorPrimaryLight">#7CA0FF</SolidColorBrush>
-    <SolidColorBrush x:Key="ColorGrayLight">#F9F9F9</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorPrimaryGray">#F3F3F3</SolidColorBrush>
     
     <!-- Background colors -->
-    <SolidColorBrush x:Key="ColorBackgroundPrimary" Color="#131725"/>
-    <SolidColorBrush x:Key="ColorBackgroundSecond" Color="#1D2335"/>
+    <SolidColorBrush x:Key="ColorBackgroundPrimary" Color="#FFF"/>
+    <SolidColorBrush x:Key="ColorBackgroundGhostWhite" Color="#F3F3F3"/>
+    <SolidColorBrush x:Key="ColorBackgroundAccent" Color="#112337"/>    
 
     <!-- Text colors -->
     <SolidColorBrush x:Key="ColorTextPrimary" Color="#FFF"/>

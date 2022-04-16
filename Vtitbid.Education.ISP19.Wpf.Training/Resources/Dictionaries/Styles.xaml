@@ -55,8 +55,8 @@
                                 <Setter Property="Background" Value="{StaticResource ColorIconSecond}"/>
                             </Trigger>
                             <Trigger Property="IsChecked" Value="True">
-                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorPrimary}"/>
-                                <Setter Property="Background" Value="{StaticResource ColorPrimary}"/>
+                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorTextPrimary}"/>
+                                <Setter Property="Background" Value="{StaticResource ColorTextPrimary}"/>
                             </Trigger>
                         </ControlTemplate.Triggers>                        
                     </ControlTemplate>
