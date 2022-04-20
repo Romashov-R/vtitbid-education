@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Vtitbid.Education.ISP19.Wpf.Training.Views
+namespace Vtitbid.Education.ISP19.Wpf.Training.Views.Lists
 {
     /// <summary>
-    /// Логика взаимодействия для EmployeesView.xaml
+    /// Логика взаимодействия для SpecialititesUserControl.xaml
     /// </summary>
-    public partial class EmployeeListView : UserControl
+    public partial class SpecialititesUserControl : UserControl
     {
-        public EmployeeListView()
+        public SpecialititesUserControl()
         {
             InitializeComponent();
         }

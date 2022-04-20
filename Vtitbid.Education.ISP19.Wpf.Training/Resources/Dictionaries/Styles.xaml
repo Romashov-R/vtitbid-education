@@ -3,15 +3,18 @@
                     xmlns:controls="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.Controls">
 
     <!-- Navigation buttons -->
-    <Style TargetType="{x:Type controls:NavigationButton}">
+    <Style x:Name="NavButtonStyle" TargetType="{x:Type controls:NavigationButton}">
         <Style.Setters>
-            <Setter Property="Background" Value="{StaticResource ColorIconPrimary}"/>
+            <Setter Property="Background" Value="{StaticResource ColorGrayLight}"/>            
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type controls:NavigationButton}">
                         <Border 
-                                Padding="0,8,0,8"
-                                Background="Transparent">
+                            x:Name="Border"
+                            Background="Transparent"
+                            BorderThickness="1"
+                            BorderBrush="Transparent">
+                            
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="4"/>
@@ -24,13 +27,13 @@
                                     Grid.Column="0"
                                     Background="Transparent"
                                     Width="4"
-                                    Height="36"
-                                    HorizontalAlignment="Left"
-                                    CornerRadius="0,2,2,0">
+                                    Height="56"
+                                    HorizontalAlignment="Left">
 
                                 </Border>
 
                                 <Path
+                                    x:Name="Icon"
                                     Grid.Column="1"
                                     Data="{TemplateBinding IconGeometry}"
                                     Fill="{TemplateBinding Background}"
@@ -39,6 +42,7 @@
                                     Stretch="Uniform"/>
 
                                 <TextBlock
+                                    x:Name="Text"
                                     Grid.Column="2"
                                     Text="{TemplateBinding Content}"
                                     Foreground="{TemplateBinding Background}"
@@ -51,12 +55,15 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorIconSecond}"/>
-                                <Setter Property="Background" Value="{StaticResource ColorIconSecond}"/>
+                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorPrimary}"/>
+                                <Setter Property="Background" Value="{StaticResource ColorPrimary}"/>
                             </Trigger>
                             <Trigger Property="IsChecked" Value="True">
-                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorTextPrimary}"/>
-                                <Setter Property="Background" Value="{StaticResource ColorTextPrimary}"/>
+                                <Setter Property="Background" TargetName="Indicator" Value="{StaticResource ColorPrimary}"/>
+                                <Setter Property="BorderBrush" TargetName="Border" Value="{StaticResource ColorPrimary}"/>
+                                <Setter Property="Background" TargetName="Border" Value="{StaticResource ColorPrimaryAlpha20}"/>
+                                <Setter Property="Foreground" TargetName="Text" Value="{StaticResource ColorPrimary}"/>
+                                <Setter Property="Fill" TargetName="Icon" Value="{StaticResource ColorPrimary}"/>
                             </Trigger>
                         </ControlTemplate.Triggers>                        
                     </ControlTemplate>

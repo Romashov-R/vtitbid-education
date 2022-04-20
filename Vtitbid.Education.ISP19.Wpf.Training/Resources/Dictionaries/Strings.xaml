@@ -5,6 +5,10 @@
     <system:String x:Key="Name">Волгодонский техникум информационных технологий, бизнеса и дизайна</system:String>
     <system:String x:Key="Abbreviature">ВТИТБиД</system:String>
 
+    
+    <system:String x:Key="Lists">Списки</system:String>
+    <system:String x:Key="Schedule">Расписание</system:String>
+    <system:String x:Key="AcademicPerformance">Успеваемость</system:String>
     <system:String x:Key="Students">Студенты</system:String>
     <system:String x:Key="Groups">Группы</system:String>
     <system:String x:Key="Employees">Работники</system:String>

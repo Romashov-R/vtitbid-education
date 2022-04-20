@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training"
-        xmlns:vm="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.ViewModels"
         xmlns:controls="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.Controls"
+        xmlns:vm="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.ViewModels"
         mc:Ignorable="d"
         Title="ВТИТБиД" 
         Height="540" 
@@ -19,64 +19,47 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200px"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Border
             Grid.Column="0"
-            Background="{StaticResource ColorBackgroundAccent}">
+            Background="#FFF">
 
             <StackPanel
                 VerticalAlignment="Center">
-
+                                                                                                                                                                                
                 <controls:NavigationButton
-                    x:Name="MenuItemStudents"
+                    x:Name="MenuItemLists"
                     IsChecked="True"
-                    IconGeometry="{StaticResource IconStudents}"
-                    Content="{StaticResource Students}"
-                    MenuItemIdentifier="Students"
+                    IconGeometry="{StaticResource IconLists}"
+                    Content="{StaticResource Lists}"
+                    MenuItemIdentifier="MainLists"
                     Command="{Binding ChangeMainControlCommand}"
-                    CommandParameter="{Binding ElementName=MenuItemStudents, Path=MenuItemIdentifier}"/>
-
+                    CommandParameter="{Binding ElementName=MenuItemLists, Path=MenuItemIdentifier}"/>
+                
                 <controls:NavigationButton
-                    x:Name="MenuItemGroups" 
-                    IconGeometry="{StaticResource IconGroups}"
-                    Content="{StaticResource Groups}"
-                    MenuItemIdentifier="Groups"
+                    x:Name="MenuItemSchedule"
+                    IconGeometry="{StaticResource IconSchedules}"
+                    Content="{StaticResource Schedule}"
+                    MenuItemIdentifier="MainAcademicPerformance"
                     Command="{Binding ChangeMainControlCommand}"
-                    CommandParameter="{Binding ElementName=MenuItemGroups, Path=MenuItemIdentifier}"/>
-
+                    CommandParameter="{Binding ElementName=MenuItemSchedule, Path=MenuItemIdentifier}"/>   
+                
                 <controls:NavigationButton
-                    x:Name="MenuItemEmployees" 
-                    IconGeometry="{StaticResource IconEmployees}"
-                    Content="{StaticResource Employees}"
-                    MenuItemIdentifier="Employees"
+                    x:Name="MenuItemAcademicPerformance"
+                    IconGeometry="{StaticResource IconAcademicPerformance}"
+                    Content="{StaticResource AcademicPerformance}"
+                    MenuItemIdentifier="MainAcademicPerformance"
                     Command="{Binding ChangeMainControlCommand}"
-                    CommandParameter="{Binding ElementName=MenuItemEmployees, Path=MenuItemIdentifier}"/>
-
-                <controls:NavigationButton
-                    x:Name="MenuItemPositions" 
-                    IconGeometry="{StaticResource IconPositions}"
-                    Content="{StaticResource Positions}"
-                    MenuItemIdentifier="Positions"
-                    Command="{Binding ChangeMainControlCommand}"
-                    CommandParameter="{Binding ElementName=MenuItemPositions, Path=MenuItemIdentifier}"/>
-
-                <controls:NavigationButton 
-                    x:Name="MenuItemSpecialities" 
-                    IconGeometry="{StaticResource IconSpecialities}"
-                    Content="{StaticResource Specialities}"
-                    MenuItemIdentifier="Specialities"
-                    Command="{Binding ChangeMainControlCommand}"
-                    CommandParameter="{Binding ElementName=MenuItemSpecialities, Path=MenuItemIdentifier}"/>
-
+                    CommandParameter="{Binding ElementName=MenuItemAcademicPerformance, Path=MenuItemIdentifier}"/>
+                
             </StackPanel>
         </Border>
-
-        <!-- Content -->
-        <ContentControl
-            Grid.Column="1"
-            Content="{Binding CurrentMainControl}"/>
+        
+        <ContentPresenter           
+            Grid.Column="2"
+            Content="{Binding Control}"/>
 
     </Grid>
 </Window>

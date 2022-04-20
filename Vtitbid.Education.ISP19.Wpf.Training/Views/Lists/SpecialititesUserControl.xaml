@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Vtitbid.Education.ISP19.Wpf.Training.Views.Lists.SpecialititesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.Views.Lists"
+             xmlns:vm="clr-namespace:Vtitbid.Education.ISP19.Wpf.Training.ViewModels.Lists"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <vm:SpecialititesViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+
+        <ListView
+            ItemsSource="{Binding Specialities}"
+            HorizontalContentAlignment="Stretch"
+            Background="Transparent"
+            BorderThickness="0">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Margin" Value="4"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Border
+                                    Name="Border"
+                                    Background="Transparent"
+                                    BorderBrush="{StaticResource ColorPrimary}"
+                                    BorderThickness="1"
+                                    CornerRadius="8">
+
+                                    <TextBlock
+                                        Name="Text"
+                                        Text="{Binding FullName}"
+                                        FontSize="14"
+                                        FontWeight="SemiBold"
+                                        Padding="8"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" TargetName="Border" Value="{StaticResource ColorPrimaryLight}"/>
+                                        <Setter Property="Foreground" TargetName="Text" Value="{StaticResource ColorPrimary}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </Grid>
+</UserControl>

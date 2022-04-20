@@ -1,25 +1,22 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <SolidColorBrush x:Key="ColorPrimary">#3772FF</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorPrimary">#1389EC</SolidColorBrush>
     <SolidColorBrush x:Key="ColorPrimaryDark">#0048CB</SolidColorBrush>
-    <SolidColorBrush x:Key="ColorPrimaryLight">#7CA0FF</SolidColorBrush>
-    <SolidColorBrush x:Key="ColorPrimaryGray">#F3F3F3</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorPrimaryLight">#1389ec</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorPrimaryAlpha20">#331389ec</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorAccent">#08cf65</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorAccentAlpha20">#3308cf65</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorGray">#808080</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorGrayLight">#D3D3D3</SolidColorBrush>
+    <SolidColorBrush x:Key="ColorWhiteSmoke">#F5F5F5</SolidColorBrush>
     
     <!-- Background colors -->
     <SolidColorBrush x:Key="ColorBackgroundPrimary" Color="#FFF"/>
-    <SolidColorBrush x:Key="ColorBackgroundGhostWhite" Color="#F3F3F3"/>
-    <SolidColorBrush x:Key="ColorBackgroundAccent" Color="#112337"/>    
 
     <!-- Text colors -->
     <SolidColorBrush x:Key="ColorTextPrimary" Color="#FFF"/>
-    <SolidColorBrush x:Key="ColorTextSecond" Color="#B0B7C3"/>
-    <SolidColorBrush x:Key="ColorTextThird" Color="#8A94A6"/>
-    <SolidColorBrush x:Key="ColorTextFourth" Color="#4B5D78"/>
+    <SolidColorBrush x:Key="ColorTextSecond" Color="#CED5E0"/>
 
-    <!-- Icon colors -->
-    <SolidColorBrush x:Key="ColorIconPrimary" Color="#8A94A6"/>
-    <SolidColorBrush x:Key="ColorIconSecond" Color="#B0B7C3"/>
-    
 
 </ResourceDictionary>
